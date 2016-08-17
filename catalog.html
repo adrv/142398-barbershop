@@ -7,107 +7,111 @@
 </head>
 <body>
   <header>
-    <div class="header-logo"></div>
-    <ul class="header-nav">
-      <li>ИНФОРМАЦИЯ</li>
-      <li>НОВОСТИ</li>
-      <li>ПРАЙС-ЛИСТ</li>
-      <li class="active">МАГАЗИН</li>
-      <li>КОНТАКТЫ</li>
-    </ul>
-    <a class="log-in">ВХОД</a>
-  </header>
-  <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
-  <ul class="breadcrumbs">
-    <li>ГЛАВНАЯ</li>
-    <li>МАГАЗИН</li>
-    <li class="active">СРЕДСТВА ДЛЯ УХОДА</li>
-  </ul>
-  <div class="content-wrapper">
-    <div class="filters">
-      <form>
-        <h2>ПРОИЗВОДИТЕЛИ:</h2>
-        <ul class="manufacturers">
-          <label for="baxter-of-california">Baxter of california</label>
-          <input type="checkbox" id="baxter-of-california">
-
-          <label for="mr-natty">Mr Natty</label>
-          <input type="checkbox" id="mr-natty">
-
-          <label for="suavecito">Suavecito</label>
-          <input type="checkbox" id="suavecito">
-
-          <label for="murray">Murray's</label>
-          <input type="checkbox" id="murray">
-
-          <label for="american_crew">American Crew</label>
-          <input type="checkbox" id="american_crew">
-        </ul>
-        <h2>Группы товаров:</h2>
-        <ul class="product-types">
-          <input type="radio" name="shaving_tools" value="0" id="shaving_tools">
-          <label for="shaving_tools">Бритвенные принадлежности</label>
-
-          <input type="radio" name="care_tools" value="1" id="care_tools">
-          <label for="care_tools">Средства для ухода</label>
-
-          <input type="radio" name="acessories" value="1" id="acessories">
-          <label for="acessories">Аксессуары</label>
-        </ul>
-        <button class="">Показать</button>
-      </form>
+    <div class="header_wrapper">
+      <a href="#" class="header-logo"><img src="http://placehold.it/50x50"></a>
+      <nav class="header-nav">
+        <a href="#">Информация</a>
+        <a href="#">Новости</a>
+        <a href="#">Прайс-лист</a>
+        <a href="#" class="header-nav-active">Магазин</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <a class="log-in">Вход</a>
     </div>
-    <div class="products">
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Набор для путешествий</span>
-        <span>Baxter of California</span>
-        <div class="product-price">2 900 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article>
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Увлажняющий кондиционер</span>
-        <span>Baxter of California</span>
-        <div class="product-price">750 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article>
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Гель для волос</span>
-        <span>Suavecito</span>
-        <div class="product-price">290 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article>
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Глина для укладки волос</span>
-        <span>American crew</span>
-        <div class="product-price">500 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article>
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Гель для волос</span>
-        <span>American crew</span>
-        <div class="product-price">300 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article>
-      <article class="product">
-        <img src="placehold.it/220x165">
-        <span>Набор для бритья</span>
-        <span>Baxter of California</span>
-        <div class="product-price">3 900 РУБ.</div>
-        <button class="buy-btn">Купить</button>
-      </article class="product">
-      <div class="pagination">
-        <a href="#">1</a>
-        <div class="active_page">2</div>
-        <a href="#">3</a>
-        <a href="#">4</a>
+  </header>
+  <main>
+    <h1>Средства Для Ухода</h1>
+    <ul class="breadcrumbs">
+      <li>Главная</li>
+      <li>Магазин</li>
+      <li class="breadcrumbs-active-item">Средства Для Ухода</li>
+    </ul>
+    <div class="main-wrapper">
+      <div class="filters">
+        <form action="/" method="post">
+          <h2>Производители:</h2>
+          <div class="manufacturers">
+            <label for="baxter-of-california">Baxter of california</label>
+            <input type="checkbox" id="baxter-of-california">
+
+            <label for="mr-natty">Mr Natty</label>
+            <input type="checkbox" id="mr-natty">
+
+            <label for="suavecito">Suavecito</label>
+            <input type="checkbox" id="suavecito">
+
+            <label for="murray">Murray's</label>
+            <input type="checkbox" id="murray">
+
+            <label for="american_crew">American Crew</label>
+            <input type="checkbox" id="american_crew">
+          </div>
+          <h2>Группы товаров:</h2>
+          <div class="product-types">
+            <input type="radio" name="shaving_tools" value="0" id="shaving_tools">
+            <label for="shaving_tools">Бритвенные принадлежности</label>
+
+            <input type="radio" name="care_tools" value="1" id="care_tools">
+            <label for="care_tools">Средства для ухода</label>
+
+            <input type="radio" name="acessories" value="1" id="acessories">
+            <label for="acessories">Аксессуары</label>
+          </div>
+          <button class="">Показать</button>
+        </form>
+      </div>
+      <div class="products">
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Набор для путешествий</span>
+          <span>Baxter of California</span>
+          <div class="product-price">2 900 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article>
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Увлажняющий кондиционер</span>
+          <span>Baxter of California</span>
+          <div class="product-price">750 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article>
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Гель для волос</span>
+          <span>Suavecito</span>
+          <div class="product-price">290 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article>
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Глина для укладки волос</span>
+          <span>American crew</span>
+          <div class="product-price">500 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article>
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Гель для волос</span>
+          <span>American crew</span>
+          <div class="product-price">300 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article>
+        <article class="product">
+          <img src="placehold.it/220x165">
+          <span>Набор для бритья</span>
+          <span>Baxter of California</span>
+          <div class="product-price">3 900 РУБ.</div>
+          <button class="buy-btn">Купить</button>
+        </article class="product">
+        <div class="pagination">
+          <a href="#">1</a>
+          <div class="active_page">2</div>
+          <a href="#">3</a>
+          <a href="#">4</a>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
   <footer>
     <p class="contacts">
       Барбершоп Бородинский<br/>
